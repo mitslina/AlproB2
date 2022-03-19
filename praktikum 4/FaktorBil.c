@@ -23,7 +23,7 @@ int main(){
                 printf("|%d", i);
             }
             i++;
-        }while(i<N);
+        }while(i<=N);
     }
 return 0;
 }
