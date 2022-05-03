@@ -1,6 +1,6 @@
 /* Nama file	: countingSort.c */
 /* Deskripsi 	: program sorting dengan counting sort */
-/* Nama-Nim  : Mitslina-24060121130068 */
+/* Nama-Nim  	: Mitslina-24060121130068 */
 /* Tgl Pembuatan : Senin, 2 Mei 2022 */
 
 #include<stdio.h>
@@ -19,7 +19,7 @@
 /* COUNTING SORTING */
 int main()
 {
-/* counting sorting : membuat arrayN tambahan dengan elemen 1~N.
+/* counting sorting : membuat arrayN tambahan dengan elemen 1~nilai maksimum elemen.
 menghitung banyaknya elemen yang sama (pada array utama) lalu ditempatkan pada arrayN tambahan.
 kemudian diurutkan dari elemen arrayN tambahan pertama hingga banyaknya elemen didalamnya menjadi 0.
 diteruskan pada elemen arrayN tambahan kedua, dan seterusnya. */
@@ -57,12 +57,12 @@ diteruskan pada elemen arrayN tambahan kedua, dan seterusnya. */
 		printf(" \n");
 		
 		/* counting hitung banyaknya angka */
-		for(j=0; j<size; j++){
+		for(j=0; j<size; j++){	/* menentukan angka yang akan dihitung, diambil dari array arr */ 
 			count=false; /* set false sebelum perhitungan banyaknya nilai */
-			for(i=1; i<=max && count==false; i++){
-				if(arr[j]==i){
-					sum[i-1]=sum[i-1]+1;
-					arr[j]=0;
+			for(i=1; i<=max && count==false; i++){	/* counter i untuk membandingkan nilai i dengan nilai arr[j] */  
+				if(arr[j]==i){ /* identifikasi angka arr[j] untuk array sum */
+					sum[i-1]=sum[i-1]+1; /* array sum berisi nilai banyaknya angka arr[j] */
+					arr[j]=0; /* kosongkan array arr */ 
 					count=true;
 				}
 			} /* end i */
@@ -85,7 +85,7 @@ diteruskan pada elemen arrayN tambahan kedua, dan seterusnya. */
 		i=0; /* inisialisasi counter array arr */
 		/* cek pada array sum */
 		for(j=1; j<=max; j++){/* adakah angka j */
-			if (sum[j-1]!=0){ /* cek banyaknya angka, jika sum=0 maka tdk ada angka j */
+			if (sum[j-1]!=0){ /* cek banyaknya angka, sum=0 artinya tdk ada angka j */
 			/* looping array arr */
 				i=i;
 				while(sum[j-1]!=0){
@@ -108,7 +108,7 @@ diteruskan pada elemen arrayN tambahan kedua, dan seterusnya. */
 				i++;
 				} /* end while */
 			}
-			/* tampilkan angka yang sudah dicek */
+			/* tampilkan tanda angka sudah dicek */
 			printf("angka %d sudah dicek\n", j);
 		} /* end j */
 		
