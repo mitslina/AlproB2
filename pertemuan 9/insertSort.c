@@ -24,8 +24,9 @@ akan disisipkan jika elemen tersebut lebih besar dari elemen sebelumnya */
 	}
 	printf("\n");
 	
-	for(i=1; i<size; i++){ /* menentukan indeks yang menjadi proses awal */
-		for(j=i; j>0 && arr[j]<arr[j-1] ; j--){ /* menentukan swap */
+	/* insert sorting: cek dari kanan ke kiri */
+	for(i=1; i<size; i++){ /* menentukan indeks yang menjadi proses awal pengecekan */
+		for(j=i; j>0 && arr[j]<arr[j-1] ; j--){ /* menentukan swap, dimulai dari indeks i */
 		/* tukar elemen */
 			temp = arr[j];
 			arr[j] = arr[j-1];
