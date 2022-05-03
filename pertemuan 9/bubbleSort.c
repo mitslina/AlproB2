@@ -1,6 +1,6 @@
 /* Nama file	: bubbleSort.c */
 /* Deskripsi 	: program sorting dengan bubble  */
-/* Nama-Nim  : Mitslina-24060121130068 */
+/* Nama-Nim  	: Mitslina-24060121130068 */
 /* Tgl Pembuatan : Senin, 2 Mei 2022 */
 
 #include<stdio.h>
@@ -48,7 +48,7 @@ Apabila nilai elemen kiri>elemen kanan, kedua elemen tersebut akan bertukar posi
 				temp = arr[i-1];
 				arr[i-1] = arr[i];
 				arr[i] = temp;
-				/* melakukan swap */
+				/* tanda melakukan swap */
 				swapped=true;
 			}
 		
