@@ -1,6 +1,6 @@
 /* Nama file	: selectionSort.c */
 /* Deskripsi 	: program sorting dengan selection sort */
-/* Nama-Nim  : Mitslina-24060121130068 */
+/* Nama-Nim  	: Mitslina-24060121130068 */
 /* Tgl Pembuatan : Senin, 2 Mei 2022 */
 
 #include<stdio.h>
@@ -27,7 +27,8 @@ Kemudian ditempatkan pada indeks awal (indeks sebelum proses scan) */
 	}
 	printf("\n");
 	
-	for(j=0; j<size-1; j++){	/* indeks yang akan ditentukan nilainya */
+	/* selection sort */
+	for(j=0; j<size-1; j++){   /* indeks yang akan ditentukan nilainya */
 		pivot=arr[j];	/* inisialisasi elemen pembanding */
 		for(i=j; i<size; i++){	/* mencari elemen array yang terkecil */
 			if(arr[i+1]<pivot){	
@@ -43,7 +44,7 @@ Kemudian ditempatkan pada indeks awal (indeks sebelum proses scan) */
 			}			
 		} /* end i */
 		
-		/* tukar nilai */
+		/* tukar nilai arr[j] pada indeks j dengan nilai pivot yang berada pada indeks dswap  */
 		temp = arr[j];
 		arr[j] = arr[dswap];
 		arr[dswap] = temp;
