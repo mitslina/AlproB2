@@ -26,7 +26,7 @@ Apabila nilai elemen kiri>elemen kanan, kedua elemen tersebut akan bertukar posi
 	int i, c;
 	int size=12;
 	int arr[12]={6, 2, 8, 1, 2, 2, 2, 6, 2, 2, 1, 1};
-	int size_hitung;
+	int size_hitung=size;
 	int temp;
 	boolean swapped;
 	
@@ -37,10 +37,10 @@ Apabila nilai elemen kiri>elemen kanan, kedua elemen tersebut akan bertukar posi
 		printf("%d ", arr[c]);
 	} /* end c */
 	printf("\n");
-		
-	size_hitung=size;
+	
+	/* bubble sort: cek dari kiri ke kanan berulang */
 	swapped=true;	/* inisialisasi awal syarat masuk ke while looping */
-	while(swapped==true){	/* cek apa semua elmt sudah urut */
+	while(swapped==true){	/* cek apa semua elmt sudah urut, urut jika swapped=false */
 		swapped=false;	/* set false sebelum adanya penukaran */
 		for(i=1; i<size; i++){	/* membandingkan tiap 2 elmt array untuk menentukan pertukaran */
 			if (arr[i-1]>arr[i]){
