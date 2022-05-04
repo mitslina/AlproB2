@@ -1,6 +1,6 @@
 /* Nama file	: insertSort.c */
 /* Deskripsi 	: program sorting dengan insert sort */
-/* Nama-Nim  : Mitslina-24060121130068 */
+/* Nama-Nim  	: Mitslina-24060121130068 */
 /* Tgl Pembuatan : Senin, 2 Mei 2022 */
 
 #include<stdio.h>
