@@ -46,7 +46,7 @@ main(){
         i=0;
         Jumlah_Kata=1;
         while(Pita[i]!='\0'){
-            if(Pita[i] == ' ' || Pita[i] == '\n' || Pita[i] == '\t'){ /* cek kesesuaian definisi kata */
+            if(Pita[i] == ' ' || Pita[i] == '\n' || Pita[i] == '\t'){ /* cek kesesuaian definisi kata (spasi, enter, tab) */
                 Jumlah_Kata++;
             }
             i++;
