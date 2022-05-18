@@ -1,5 +1,5 @@
 /*Nama File 	: hitungKata.c*/
-/*Deskripsi 	: Mesin abstrak untuk menghitung kata */
+/*Deskripsi 	: Mesin abstrak untuk menghitung banyak kata di pita */
 /*Pembuat   	: 24060121130068-Mitslina*/
 /*Tgl Pembuatan	: Rabu, 18 Mei 2022*/
 /*Definisi: Kata adalah pasangan
